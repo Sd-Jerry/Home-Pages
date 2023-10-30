@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background: #000000;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+nav img {
+    height: 70px;
+    cursor: pointer;
+}
+
+#check,
+.CheckBtn {
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    transition: all 0.3s ease-in;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eaf4ed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 255, 86);
+}
+
+.text-box {
+    margin-top: 130px;
+    max-width: 600px;
+}
+
+.text-box h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #5bdb62;
+}
+
+.text-box p {
+    color: rgb(221, 198, 218);
+}
+
+.text-box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #5bdb62;
+    border: 1px solid #5bdb62;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+}
+
+.text-box a:hover {
+    background: transparent;
+    color: #5bdb62;
+}
+
+.user-box {
+    background: #4f4c4f;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 1;
+}
+
+.user-box img {
+    display: block;
+    padding-top: 90px;
+    width: 388px;
+    margin-bottom: -205px;
+    cursor: pointer;
+}
+
+.user-box img:hover {
+    box-shadow: rgba(89, 255, 5, 0.35) 0px 5px 15px;
+
+}
+
+.CheckBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #5bdb62;
+    line-height: 80px;
+}
+
+
+/* CODE FOR RESPONSIVE */
+
+@media screen and (max-width:805px) {
+
+    body {
+        overflow-x: hidden;
+        background-color: #000000;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 32vh;
+        background-color: rgba(0, 0, 0, 0.428);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 100%;
+        transition: all 1s ease-in;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+    .user-box img{
+        width: 300px;
+    }
+
+    .text-box{
+        width: 50%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .user-box img{
+        margin-top: 30px;
+    }
+
+    .text-box{
+        width: 100%;
+        position: relative;
+        top: 70%;
+        text-align: center;
+    }
+}

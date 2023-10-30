@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* container1 section */
+.container1 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url('./Img/Home\ bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px 8%;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 110px;
+    cursor: pointer;
+}
+
+#check,
+.CheckBtn {
+    display: none;
+}
+
+.CheckBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: orange;
+    line-height: 80px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: inline-block;
+    margin: 0px 20px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+}
+
+.list li:hover {
+    transform: translateY(-5px);
+    background-color: #ff9b1996;
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.list li a i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 620px;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+.content p {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.content form {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.content form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.content form .btn {
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 0;
+}
+
+.content form .btn:hover {
+    color: black;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff9a19;
+    outline: none;
+    border-radius: 5px;
+    background: #ff9a19;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:805px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .list {
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(255, 187, 61);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12rem;
+        left: 100%;
+        transition: all 1s ease-in;
+    }
+
+    .list li {
+        margin-top: 25px;
+        padding: 10px 0;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+}
