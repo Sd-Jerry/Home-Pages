@@ -1,4 +1,4 @@
-#🏡 Home-Page Repository 🌟
+🏡 #Home-Page Repository 🌟
 
 Welcome to the Home-Page repository, where you'll find a collection of beautifully designed home page templates for various categories. Whether you're building a personal website, a blog, an e-commerce site, or any other web project, our templates are here to help you get started quickly and make your web presence shine.
 
