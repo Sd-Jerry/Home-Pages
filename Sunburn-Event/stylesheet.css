@@ -6,29 +6,27 @@
 }
 
 .header {
+    border: 2px solid red;
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .col-1 {
-    flex-basis: 43%;
-    flex-grow: 1;
     background-image: url('./Img/Home\ Bg.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;
     color: #fff;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .col-2 {
-    flex-basis: 57%;
-    flex-grow: 1;
     padding: 40px 80px;
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
 }
 
 .nav {
@@ -96,14 +94,16 @@
 }
 
 .col-2 ul {
-    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 2px solid yellow;
+
 }
 
 .col-2 ul li {
+    list-style: none;
     padding: 5px 8px;
     cursor: pointer;
     transition: all 0.3s linear;
