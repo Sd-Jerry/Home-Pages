@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- ---------- FAVICON LINK IS HERE ---------- -->
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunburn 2023</title>
     <!-- ---------- CSS LINK IS HERE ---------- -->
@@ -14,6 +15,10 @@
 <body>
     <div class="header">
         <div class="col-1">
+            <video autoplay loop muted plays-inline id="backvideo">
+                <source src="./Img/Party Video.mp4" type="video/mp4">
+            </video>
+
             <div class="nav">
                 <img src="./Img/Logo in White.png" class="logo" alt="Sunburn Logo">
                 <img src="./Img/Search.png" class="search-icon" alt="Search Logo">
@@ -24,7 +29,7 @@
                 <p>Whoever said money can't buy you happiness clearly doesn't know about the Sunburn festival. One of
                     Asia's biggest music festivals is happening this year. Book the tickets for the festival to
                     Vagator Beach in Goa on 28th, 29th, and 30th December 2023.</p>
-                <a href="#"><img src="./Img/Play Button.png"> Watch Video</a>
+                <a href="#"><img src="./Img/Play Button.png" id="PlyBtn"> Watch Video</a>
             </div>
         </div>
 
@@ -50,6 +55,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
