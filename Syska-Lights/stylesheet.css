@@ -79,6 +79,7 @@ button span {
 
 .lamp {
   width: 100%;
+  border: 2px solid green;
 }
 
 .light {
@@ -190,11 +191,57 @@ button span {
     font-size: 50px;
   }
 
-  .text-container p{
+  .text-container p {
     margin-top: 20px;
   }
 
-  .control{
-  margin-top: 60px;
+  .control {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .hero{
+    height: 100vh;
+  }
+
+  nav {
+    padding: 20px 5%;
+  }
+
+  .list li {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .text-container h1 {
+    font-size: 60px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text-container a {
+    font-size: 16px;
+    padding: 12px 30px;
+    margin-top: 20px;
+  }
+
+  .lamp-container{
+    top: 280px;
+    left: 30%;
+  }
+
+  .control {
+    margin-top: 80px;
+    /* text-align: center; */
+  }
+
+  .light{
+    border: 2px solid pink;
+    width: 400px;
   }
 }
