@@ -11,7 +11,6 @@
   width: 100%;
   color: #fff;
   position: relative;
-  border: 2px solid yellow;
 }
 
 nav {
@@ -20,7 +19,6 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 8%;
-  border: 2px solid red;
 }
 
 nav .logo {
@@ -79,7 +77,6 @@ button span {
 
 .lamp {
   width: 100%;
-  border: 2px solid green;
 }
 
 .light {
@@ -97,7 +94,6 @@ button span {
   max-width: 600px;
   margin-top: 7%;
   margin-left: 50%;
-  border: 2px solid red;
 }
 
 .text-container h1 {
@@ -114,7 +110,6 @@ button span {
 .text-container a {
   text-decoration: none;
   background: #00986f;
-  border: 2px solid #00986f;
   padding: 14px 40px;
   display: inline-block;
   color: #fff;
@@ -202,46 +197,89 @@ button span {
 
 @media (max-width: 475px) {
 
-  .hero{
-    height: 100vh;
+  .hero {
+    min-height: 100vh;
   }
 
   nav {
-    padding: 20px 5%;
+    padding: 20px 5px;
+  }
+
+  nav .logo {
+    width: 100px;
   }
 
   .list li {
-    font-size: 16px;
-    margin: 8px 0;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .text-container {
+    margin-top: 42%;
+    margin-left: 0%;
   }
 
   .text-container h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .text-container p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
   }
 
   .text-container a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 30px;
     margin-top: 20px;
   }
 
-  .lamp-container{
-    top: 280px;
-    left: 30%;
+  .lamp-container {
+    top: 165px;
+    left: 36%;
+    width: 140px;
   }
 
   .control {
     margin-top: 80px;
-    /* text-align: center; */
+    justify-content: center;
   }
 
-  .light{
-    border: 2px solid pink;
+  .light {
     width: 400px;
+  }
+}
+
+@media (max-width: 426px) {
+  nav .logo {
+    width: 90px;
+  }
+
+  .list li {
+    font-size: 13px;
+  }
+
+  button {
+    height: 22px;
+    width: 45px;
+  }
+
+  button span {
+    height: 20px;
+    width: 20px;
+  }
+
+  .lamp-container {
+    top: 135px;
+    left: 37%;
+    width: 120px;
+  }
+
+  .light {
+    width: 350px;
+   }
+
+   .text-container {
+    margin-top: 50%;
   }
 }
