@@ -277,9 +277,42 @@ button span {
 
   .light {
     width: 350px;
-   }
+  }
 
-   .text-container {
+  .text-container {
     margin-top: 50%;
   }
+}
+
+@media (max-width: 376px) {
+  .list li {
+    font-size: 11px;
+  }
+
+  .lamp-container {
+    left: 37%;
+    width: 100px;
+  }
+
+  .light {
+    top: 83%;
+    left: 58%;
+  }
+}
+
+@media (max-width: 321px) {
+  .list li {
+    font-size: 9px;
+  }
+
+  .light {
+    width: 240px;
+    left: 62%;
+  }
+
+  .lamp-container {
+    left: 39%;
+    width: 70px;
+  }
+
 }
