@@ -32,4 +32,5 @@ link is here of all my Projects. 👇
 
 👉 SPOTIFY-MUSIC -- https://sd-jerry.github.io/Home-Pages/Spotify-Music     
 👉 STARLINE-AIRWAYS --  https://sd-jerry.github.io/Home-Pages/Starline-Airways     
-👉 SUNBURN EVENT --  https://sd-jerry.github.io/Home-Pages/Sunburn-Event
+👉 SUNBURN-EVENT --  https://sd-jerry.github.io/Home-Pages/Sunburn-Event     
+👉 SYSKA-LIGHTS --  https://sd-jerry.github.io/Home-Pages/Syska-Lights
